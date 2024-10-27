@@ -1,0 +1,48 @@
+{
+
+	"a link": {
+		"scope": "html,typescript",
+		"prefix": "avd",
+		"body": [
+			"<a tabindex=\"1\" target=\"_blank\" href=\"$1\">vid link</a>;",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"autofocus": {
+		"scope": "html,typescript",
+		"prefix": "af",
+		"body": [
+			"autofocus $1"
+		],
+		"description": "autofocus"
+	},
+	"code container": {
+		"scope": "html,typescript",
+		"prefix": "cdt",
+		"body": [
+			"<div class=\"code-container\"><pre tabindex=\"0\" class=\"copy-code\"> ",
+"$1",
+"</pre></div>"
+		],
+		"description": "code container "
+	},
+	"step-img": {
+		"scope": "html,typescript",
+		"prefix": "imgstp",
+		"body": [
+			"<div class=\"step\">",
+    			"\t<div tabindex=\"0\" class=\"step-txt\">",
+					"\t\t<h3>$1</h2>",
+					"\t\t<p>",
+					"\t\t\t$2",
+					"\t\t</p>",
+    			"\t</div>",
+    			"\t<div class=\"step-img\">",
+    			    "\t\t<img src=\"\" alt=\"\">",
+    			"\t</div>",
+			"</div>"
+		],
+		"description": "code container "
+	}
+}

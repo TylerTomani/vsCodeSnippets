@@ -1,0 +1,72 @@
+/*  */{
+	"mod plus 1": {
+		"scope": "javascript,typescript",
+		"prefix": "p1",
+		"body": [
+			"($1 + 1) % $2.length"
+		],
+		"description": "mod arr plus 1"
+	},
+	"let key": {
+		"scope": "javascript,typescript",
+		"prefix": "letkey",
+		"body": [
+			"let key = e.keyCode ",
+			"$1"
+		],
+		"description": "let let"
+	},
+	"let letter": {
+		"scope": "javascript,typescript",
+		"prefix": "letlet",
+		"body": [
+			"let letter = e.key.toLowerCase() ",
+			"$1"
+		],
+		"description": "let let"
+	},
+	"if letter": {
+		"scope": "javascript,typescript",
+		"prefix": "iflet",
+		"body": [
+			"if(letter == $1 ){",
+			"\t$2",
+			"}"
+		],
+		"description": "let let"
+	},
+	"forEach": {
+		"scope": "javascript,typescript",
+		"prefix": "forEach",
+		"body": [
+			"forEach($1 =>{",
+			"\t$2",
+			"})"
+		],
+		"description": "for each"
+	},
+	"has class": {
+		"scope": "javascript,typescript",
+		"prefix": "hscl",
+		"body": [
+			"classList.contains('$1')$2",
+		],
+		"description": "contains.(' ')"
+	},
+	"remove class": {
+		"scope": "javascript,typescript",
+		"prefix": "rmvcls",
+		"body": [
+			"classList.remove('$1')$2"
+		],
+		"description": "contains.(' ')"
+	},
+	"add class": {
+		"scope": "javascript,typescript",
+		"prefix": "adcls",
+		"body": [
+			"classList.add('$1')$2"
+		],
+		"description": "contains.(' ')"
+	}
+}
