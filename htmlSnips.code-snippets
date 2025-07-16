@@ -1,48 +1,176 @@
 {
-
-	"a link": {
-		"scope": "html,typescript",
-		"prefix": "avd",
+	"tab": {
+		"scope": "html,typscript",
+		"prefix": "tt",
 		"body": [
-			"<a tabindex=\"1\" target=\"_blank\" href=\"$1\">vid link</a>;",
-			"$2"
+			"&emsp;"
+		],
+		"description": "emspace"
+	},
+	"part": {
+		"scope": "html,",
+		"prefix": "part",
+		"body": [
+			"<div class=\"part\">",
+			"\t<a tabindex=\"0\" href=\"#\" class=\"dropPart\"><h3>Part $1</h3></a>",
+			"\t$2",
+			"</div>"
+		],
+		"description": "part"
+	},
+	"imgstep": {
+		"scope": "html,",
+		"prefix": "imgstep",
+		"body": [
+			"<div class=\"step\">",
+			"\t<div tabindex=\"0\" class=\"step-txt\">",
+			"\t\t<h4>0$1</h4>",
+			"\t\t<p>",
+			"\t\t\t$2",
+			"\t\t</p>",
+			"\t</div>",
+			"\t<div class=\"step-img\">",
+			// "\t\t<img src=\"/documentation/python/scrapy/youtubeChannels/freeCodeCamp-scrapy/01-scrapyCoursePythonWebScrapBegin/sections/01-installSetupScrapy/$3\">",
+			"\t\t<img src=\"sections/$3\">",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "imgstep"
+	},
+	"vidstep": {
+		"scope": "html,",
+		"prefix": "vidstep",
+		"body": [
+			"<div class=\"step\">",
+			"\t<div tabindex=\"0\" class=\"step-txt playVid-click\">",
+			"\t\t<h4>0$1</h4>",
+			"\t\t<p>",
+			"\t\t\t$2",
+			"\t\t</p>",
+			"\t</div>",
+			"\t<div class=\"step-vid\">",
+			"\t\t<video src=\"sections/$3\">",
+			// "\t\t<video src=\"/documentation/python/scrapy/youtubeChannels/freeCodeCamp-scrapy/01-scrapyCoursePythonWebScrapBegin/sections/01-installSetupScrapy/$3\">",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "vidstep"
+	},
+	"imgstepcol": {
+		"scope": "html,",
+		"prefix": "imgstepcol",
+		"body": [
+			"<div class=\"step-col\">",
+			"\t<div tabindex=\"0\" class=\"step-txt\">",
+			"\t\t<h4>$1</h4>",
+			"\t\t<p>",
+			"\t\t\t$2",
+			"\t\t</p>",
+			"\t</div>",
+			// "\t<div class=\"img-2-container\">",
+			// "\t\t\t<pre tabindex=\"0\" class=\"copy-code\">",
+			// "\t\t\t\t$3</pre>",
+			// "\t\t</div>",
+			// "\t\t<div class=\"step-img\">",
+			// "\t\t\t<img src=\"/documentation/python/scrapy/youtubeChannels/freeCodeCamp-scrapy/01-scrapyCoursePythonWebScrapBegin/sections/01-installSetupScrapy/$4\">",
+			// "\t\t\t<img src=\"imagesVideos$4\">",
+			// "\t\t</div>",
+			// "\t\t<div class=\"step-img\">",
+			// "\t\t\t<img src=\"/documentation/python/scrapy/youtubeChannels/freeCodeCamp-scrapy/01-scrapyCoursePythonWebScrapBegin/sections/01-installSetupScrapy/$5\">",
+			// "\t\t\t<img src=\"imagesVideos$5\">",
+			// "\t\t</div>",
+			// "\t</div>",
+			"</div>",
+		],
+		"description": "imgstepcol"
+	},
+	"step txt": {
+		"scope": "html,",
+		"prefix": "stptx",
+		"body": [
+			"<div tabindex=\"0\" class=\"step-txt\">",
+			"\t<h4>$1</h4>",
+			"\t<p>$2</p>",
+			"\t$3",
+			"</div>"
+		],
+		"description": "part"
+	},
+	"chatgpt question": {
+		"scope": "html,",
+		"prefix": "chatg",
+		"body": [
+			"<div class=\"chatgpt-question-container\">",
+			"\t<div tabindex=\"0\" class=\"chatgpt-question step-txt\">",
+			"\t\t<h4>0$1</h4>",
+			"\t\t<div class=\"ts-icon-container\">",
+			"\t\t\t<img class=\"fi logo\" src=\"../../../images/ts-icon.png\" alt=\"\">",
+			"\t\t</div>",
+			"\t\t<div class=\"chatgpt-question-txt\">",
+			"\t\t\t<h5 class=\"the-chatgpt-question lg-txt\"><strong>question:</strong>",
+			"\t\t\t\t<span class=\"copy-code\">$2</span>",
+			"\t\t\t</h5>",
+			"\t\t</div>",
+			"\t</div>",
+			"\t<div class=\"answer\">",
+			"\t\t<div class=\"logo-icon-container\">",
+			"\t\t\t<img class=\"fi logo\" src=\"../../../images/logo-icon.png\">",
+			"\t\t</div>",
+			"\t\t<div class=\"answer-txt\">",
+			"\t\t\t<p>",
+			"\t\t\t\t$3",
+			"\t\t\t</p>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
 		],
 		"description": "Log output to console"
 	},
 	"autofocus": {
-		"scope": "html,typescript",
+		"scope": "html,",
 		"prefix": "af",
 		"body": [
 			"autofocus $1"
 		],
 		"description": "autofocus"
 	},
-	"code container": {
-		"scope": "html,typescript",
+	"Auto home": {
+		"scope": "html,",
+		"prefix": "aa",
+		"body": [
+			"<a target=\"_blank\" href=\"$1\">$2</a>",
+			"$3"
+		],
+		"description": "a tag"
+	},
+	"auto lesson css": {
+		"scope": "html,",
+		"prefix": "ll",
+		"body": [
+			"<link rel=\"stylesheet\" href=\"../../$1css/lesson.css\">"
+		],
+		"description": "auto lesson style page"
+	},
+	"code-container": {
+		"scope": "html,",
 		"prefix": "cdt",
 		"body": [
-			"<div class=\"code-container\"><pre tabindex=\"0\" class=\"copy-code\"> ",
-"$1",
-"</pre></div>"
+			"<div class=\"code-container\">",
+			"\t<pre tabindex=\"0\" class=\"copy-code\">",
+			// "\t<pre tabindex=\"0\" class=\"copy-code\">",
+			"\t\t${1}</pre>",
+			"</div>",
+			"${2}"
 		],
-		"description": "code container "
+		"description": "code-containter"
 	},
-	"step-img": {
-		"scope": "html,typescript",
-		"prefix": "imgstp",
+	"double tab": {
+		"scope": "html,",
+		"prefix": "mm",
 		"body": [
-			"<div class=\"step\">",
-    			"\t<div tabindex=\"0\" class=\"step-txt\">",
-					"\t\t<h3>$1</h2>",
-					"\t\t<p>",
-					"\t\t\t$2",
-					"\t\t</p>",
-    			"\t</div>",
-    			"\t<div class=\"step-img\">",
-    			    "\t\t<img src=\"\" alt=\"\">",
-    			"\t</div>",
-			"</div>"
+			"&emsp;&emsp;&emsp;${1}",
+			"$2"
 		],
-		"description": "code container "
+		"description": "double tab"
 	}
 }

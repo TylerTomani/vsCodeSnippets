@@ -1,72 +1,212 @@
-/*  */{
-	"mod plus 1": {
-		"scope": "javascript,typescript",
-		"prefix": "p1",
+{
+	"console log": {
+		"scope": "javascript",
+		"prefix": "clog",
 		"body": [
-			"($1 + 1) % $2.length"
+			"console.log($1)$2"
 		],
-		"description": "mod arr plus 1"
+		"description": "addEventListener to variable"
 	},
-	"let key": {
-		"scope": "javascript,typescript",
-		"prefix": "letkey",
+	"addEventListener": {
+		"scope": "javascript",
+		"prefix": "adeee",
 		"body": [
-			"let key = e.keyCode ",
-			"$1"
+			"addEventListener('$1', $2 => {",
+			"\t$3",
+			"});"
 		],
-		"description": "let let"
+		"description": "addEventListener to variable"
 	},
-	"let letter": {
-		"scope": "javascript,typescript",
-		"prefix": "letlet",
+	"toggle class": {
+		"scope": "javascript",
+		"prefix": "tgcls",
 		"body": [
-			"let letter = e.key.toLowerCase() ",
-			"$1"
+			"classList.toggle('$1')$2"
 		],
-		"description": "let let"
-	},
-	"if letter": {
-		"scope": "javascript,typescript",
-		"prefix": "iflet",
-		"body": [
-			"if(letter == $1 ){",
-			"\t$2",
-			"}"
-		],
-		"description": "let let"
-	},
-	"forEach": {
-		"scope": "javascript,typescript",
-		"prefix": "forEach",
-		"body": [
-			"forEach($1 =>{",
-			"\t$2",
-			"})"
-		],
-		"description": "for each"
+		"description": "toggle class"
 	},
 	"has class": {
-		"scope": "javascript,typescript",
-		"prefix": "hscl",
+		"scope": "javascript",
+		"prefix": "hscls",
 		"body": [
-			"classList.contains('$1')$2",
+			"classList.contains('$1')$2"
 		],
-		"description": "contains.(' ')"
-	},
-	"remove class": {
-		"scope": "javascript,typescript",
-		"prefix": "rmvcls",
-		"body": [
-			"classList.remove('$1')$2"
-		],
-		"description": "contains.(' ')"
+		"description": "has class"
 	},
 	"add class": {
-		"scope": "javascript,typescript",
-		"prefix": "adcls",
+		"scope": "javascript",
+		"prefix": "adclass",
 		"body": [
 			"classList.add('$1')$2"
 		],
-		"description": "contains.(' ')"
+		"description": "add class"
+	},
+	"remove class": {
+		"scope": "javascript",
+		"prefix": "rmvclass",
+		"body": [
+			"classList.remove('$1')"
+		],
+		"description": "remove class"
+	},
+	"for Each": {
+		"scope": "javascript",
+		"prefix": "foreach",
+		"body": [
+			"forEach($1 => {",
+			"\t$2",
+			"})"
+		],
+		"description": "forEach"
+	},
+	"if key": {
+		"scope": "javascript",
+		"prefix": "ifkey",
+		"body": [
+			"if(key === $1){",
+			"}"
+		],
+		"description": "if key"
+	},
+	"if enter": {
+		"scope": "javascript",
+		"prefix": "ifent",
+		"body": [
+			"if(letter == 'enter'){",
+			"\t$1 ",
+			"}",
+			"$2"
+		],
+		"description": "if enter"
+	},
+	"forEach": {
+		"scope": "javascript",
+		"prefix": "forEach",
+		"body": [
+			"forEach($1 => {",
+			"\t$2""})"
+		],
+		"description": "forEach"
+	},
+	"getparent'": {
+		"scope": "javascript",
+		"prefix": "getparent",
+		"body": [
+			"$3",
+			"function get$1(parent){",
+			"\tif(parent.classList.contains('$2')){",
+			"\t\treturn parent",
+			"\t} else if (parent.parentElement){",
+			"\t\treturn get$1(parent.parentElement)",
+			"\t} else {",
+			"\t\treturn null",
+			"\t}",
+			"}"
+		],
+		"description": "if enter"
+	},
+	"let key'": {
+		"scope": "javascript",
+		"prefix": "letkey",
+		"body": [
+			"let key = e.key",
+		],
+		"description": "let key"
+	},
+	"let keyCode'": {
+		"scope": "javascript",
+		"prefix": "letkeycode",
+		"body": [
+			"let key = e.keyCode",
+		],
+		"description": "let keycode"
+	},
+	"let letter": {
+		"scope": "javascript",
+		"prefix": "letlet",
+		"body": [
+			"let letter = e.key.toLowerCase()",
+		],
+		"description": "let letter"
+	},
+	"doc query '": {
+		"scope": "javascript",
+		"prefix": "dqry",
+		"body": [
+			"document.querySelector('$1')",
+		],
+		"description": "document querySelector"
+	},
+	"doc query all'": {
+		"scope": "javascript",
+		"prefix": "dqrya",
+		"body": [
+			"document.querySelectorAll('$1')",
+		],
+		"description": "document querySelectorAll"
+	},
+	"query '": {
+		"scope": "javascript",
+		"prefix": "qry",
+		"body": [
+			"querySelector('$1')",
+		],
+		"description": "querySelector"
+	},
+	"query all'": {
+		"scope": "javascript",
+		"prefix": "qrya",
+		"body": [
+			"querySelectorAll('$1')",
+		],
+		"description": "querySelectorAll"
+	},
+	"if ent'": {
+		"scope": "javascript",
+		"prefix": "ifent",
+		"body": [
+			"if(key == 13){",
+			"\t$1",
+			"}",
+			"$2"
+		],
+		"description": "if ent"
+	},
+	"if letter'": {
+		"scope": "javascript",
+		"prefix": "iflet",
+		"body": [
+			"if(letter == $1){",
+			"\t$2",
+			"}",
+			"$3"
+		],
+		"description": "if ent"
+	},
+	"p1 + 1 modulo'": {
+		"scope": "javascript",
+		"prefix": "p1",
+		"body": [
+			"= ($1 + 1) % $2.length",
+			"$3"
+		],
+		"description": "if ent"
+	},
+	"p - 1 modulo'": {
+		"scope": "javascript",
+		"prefix": "m1",
+		"body": [
+			"= ($1 - 1 + $2.length) % $2.length",
+			"$3"
+		],
+		"description": "if ent"
+	},
+	"document.createElement()'": {
+		"scope": "javascript",
+		"prefix": "dcre",
+		"body": [
+			"document.createElement($1)$2"
+		],
+		"description": "createElement()"
 	}
 }
